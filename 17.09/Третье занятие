@@ -1,0 +1,65 @@
+S = ('Привет')
+i = 193
+b = True
+print(type(S))
+print(type(i))
+print(type(b))
+#S = int(S)
+i = str(i)
+b = int(b)
+print(type(S))
+print(type(i))
+print(type(b))
+
+input("Как дела?")
+print("1")
+print("1 1")
+print('1 1 1')
+print("Я вам не мешаю?")
+
+input("Как вас зовут?")
+input("Какое у вас отчество?")
+print("Доюрый вечер Егор Иванович")
+
+x = input("Какое у вас хобби?")
+print("Егор!Я считаю,что хобби",x,"восхитительное!")
+
+input("Вспомните и назовите самую известную в мире романтическую пару.")
+x = input("А как зовут мужчину из пары названной вами?")
+y = input("А как зовут женщину?")
+print(x ,"+", y, "= Шиза")
+
+input("Введите три числа")
+x = input()
+y = input()
+z = input()
+x = int(x)
+y = int(y)
+z = int(z)
+print(x,"+",y,"+",z,"=",x+y+z)
+
+input("Введите два числа")
+x = input()
+y = input()
+x = int(x)
+y = int(y)
+print((x+y)/2)
+
+x = input("Сколько ты добавил?")
+x = int(x)
+y = input("Сколько ты добавил?")
+y = int(y)
+z = input("Сколько ты добавил?")
+z = int(z)
+print(15000-x-y-z)
+
+x = 100
+y = 32
+z = 6
+a = input("Сколько вы купили молока?")
+a = int(a)
+q = input("Сколько вы купили сосисок?")
+q = int(q)
+w = input("Сколько вы купили хлеба?")
+w = int(w)
+print((x*a)+(y*w)+(z*q))
