@@ -1,0 +1,33 @@
+print('')
+x=int(input())
+y=int(x/2+0.5)
+print(y)
+
+print('')
+x=int(input())
+y=int(x/4+0.75)
+print(y)
+
+s = input()
+s = float(s)
+v1 = input()
+v1 = float(v1)
+v2 = input()
+v2 = float(v2)
+print(s/(v1+v2))
+
+f = input()
+f = float(f)
+print(5/9*(f-32))
+
+b1 = input()
+b1 = int(b1)
+q = input()
+q = int(q)
+n = int(input())
+#n = int(n - 1)
+print(b1*q**n-1)
+
+x = input()
+x = int(x)
+print("сумма чисел = ",(x//100)+(x//10%10))
