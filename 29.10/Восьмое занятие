@@ -1,0 +1,50 @@
+x = int(input())
+y = int(input())
+z = int(input())
+if( y ==(y - x + 29)):
+    z = 5
+print(z)
+
+x = int(input())
+y = int(input())
+z = int(input())
+if( y !=(y - x + 29)):
+    z = 6
+if( y ==(y - x + 29)):
+    z = 5
+print(z)
+
+
+import pyautogui
+import time
+print("Введите ваш логин")
+x  = str(input())
+print("Введите ваш пароль")
+y = str(input())
+if(x == ("a")and y == ("v")):
+    pyautogui.moveTo(1250,20)
+    pyautogui.click()
+    pyautogui.moveTo(1300,20)
+    time.sleep(1)
+    pyautogui.doubleClick()
+if(x !=("a") and y !=("v")) :
+    pyautogui.alert(text ="Логин и Пароль неверны",button ="ОК")
+if(x !=("a") and y ==("v")):
+    pyautogui.alert(text ="Логин неверен",button ='ОК')
+if(x ==("a") and y !=("v")):
+    pyautogui.alert(text = "Пароль неверен",button = 'ОК')
+import pyautogui
+import time
+print("Введите ваш Имя")
+x  = str(input())
+print("Введите ваш Фамилию")
+y = str(input())
+print("Введите ваш возраст")
+z = str(input())
+if(x == ("A")and y == ("AS")and z != ("17")):
+    pyautogui.alert(text ="Входите",button ="ОК")
+if(x ==("Микордий") and y ==("Пармезанов") and z == ("17")):
+    pyautogui.alert(text =" Нельзя вам",button ='ОК')
+if(z == ("17")):
+    pyautogui.alert(text =" Нельзя вам",button ='ОК')
+
