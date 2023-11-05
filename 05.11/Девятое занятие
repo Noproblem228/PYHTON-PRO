@@ -1,0 +1,68 @@
+import pyautogui
+import time
+x = int(input())
+y = int(input())
+if(x > 60 and y < 10 or x < 30 and y > 30):
+    pyautogui.alert("Тревога!!")
+    pyautogui.moveTo(1750,15)
+    pyautogui.click()
+    time.sleep(1)
+    pyautogui.moveTo(1850,10)
+    pyautogui.doubleClick()
+    time.sleep(1)
+    pyautogui.moveTo(800,130)
+    pyautogui.click()
+    time.sleep(1)
+    pyautogui.write("what to do if there is a violation in the greenhouse?")
+    pyautogui.hotkey('enter')
+if not(x > 60 and y < 10 or x < 30 and y > 30):
+    pyautogui.alert("Все нормально")
+
+import pyautogui
+import time
+x = int(input())
+y = int(input())
+a = int(input())
+b = int(input())
+if(x > 6 or y > 6 or a > 6 or b > 6):
+    pyautogui.alert("Замени от греха подальше")
+if(x < 7 and y < 7 and a < 7 and b < 7):
+    pyautogui.alert("Всё хорошо, ехаем")
+
+import pyautogui
+import time
+x = int(input())
+y = int(input())
+a = int(input())
+b = int(input())
+if (x > 6):
+    pyautogui.alert ("Замени 1 колесо от греха подальше")
+if (y > 6):
+    pyautogui.alert ("Замени 2 колесо от греха подальше")
+if (a > 6):
+    pyautogui.alert ("Замени 3 колесо от греха подальше")
+if (b > 6):
+    pyautogui.alert ("Замени 4 колесо от греха подальше")
+if(x < 7 and y < 7 and a < 7 and b < 7):
+    pyautogui.alert("Всё хорошо, ехаем")
+
+import pyautogui
+import time
+x = int(input())
+y = int(input())
+if (x < 1000):
+    print("Цена = ", x )
+    print("Скидка = ", y )
+    print("Сумма = ", x )
+if (x > 1000 and x < 2000):
+    print("Цена = ", x )
+    print("Скидка = ", y )
+    print("Сумма = ",x - (x // 100) * y)
+if (x > 2000 and x < 5000):
+    print("Цена = ", x )
+    print("Скидка = ", y )
+    print("Сумма = ", x - (x // 100) * y)
+if (x > 5000 ):
+    print("Цена = ", x )
+    print("Скидка = ", y )
+    print("Сумма = ", x - (x // 100) * y)
