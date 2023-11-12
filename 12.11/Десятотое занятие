@@ -1,0 +1,65 @@
+import pyautogui
+import time
+x = int(input())
+y = int(input())
+if (x < 1000):
+    print("Цена = ", x )
+    print("Скидка = ", y )
+    print("Сумма = ", x )
+if (x > 1000 and x < 2000):
+    print("Цена = ", x )
+    print("Скидка = ", y )
+    print("Сумма = ",x - (x // 100) * y)
+if (x > 2000 and x < 5000):
+    print("Цена = ", x )
+    print("Скидка = ", y )
+    print("Сумма = ", x - (x // 100) * y)
+if (x > 5000 ):
+    print("Цена = ", x )
+    print("Скидка = ", y )
+    print("Сумма = ", x - (x // 100) * y)
+
+
+import pyautogui
+x = int(input())
+if((x // 1000) + (x % 10)) == (( x // 100) % 10) -(( x // 10)% 10):
+    pyautogui.alert("Верно")
+if((x // 1000) + (x % 10))!= (( x // 100) % 10) - (( x // 10)% 10):
+    pyautogui.alert("Неверно")
+#print(x // 1000)первое число
+#print(x % 10) последнее число
+#print(( x // 100) % 10)второе число
+#print(( x // 10)% 10 )третье числo
+
+
+x = int(input())
+if(x // 100 < 0):
+    x = 0
+if(x % 10 < 0):
+    x = 0
+if((x//10)%10 < 0 ):
+    x = 0
+
+x = int(input())
+y = int(input())
+z = int(input())
+a = int(input())
+m1 = 0
+m2 = 0
+if(x > y ):
+    m1 = y
+if(y > x):
+    m1 = x
+if(z > a ):
+    m2 = a
+if ( a > z ):
+    m2 = z
+if(m1>m2):
+    print(m1)
+if(m2>m1):
+    print(m2)
+
+
+
+
+
