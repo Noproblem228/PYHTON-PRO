@@ -1,0 +1,99 @@
+import pyautogui
+x = int(input())
+if(x < 10):
+    if(x == 0):
+        pyautogui.alert("Ноль")
+    if(x == 1):
+        pyautogui.alert("Один")
+    if(x == 2):
+        pyautogui.alert("Два")
+    if(x == 3):
+        pyautogui.alert("Три")
+    if(x == 4):
+        pyautogui.alert("Четыре")
+    if(x == 5):
+        pyautogui.alert("Пять")
+    if(x == 6):
+        pyautogui.alert("Шесть")
+    if(x == 7):
+        pyautogui.alert("Семь")
+    if(x == 8):
+        pyautogui.alert("Восемь")
+    if(x == 9):
+        pyautogui.alert("Девять")
+    print(x - 1)
+else:
+    pyautogui.alert("Ошибка")
+
+
+else:
+    pyautogui.alert("Ошибка")
+ 
+import pyautogui
+x = int(input())
+y = int(input())
+c = int(input())
+v = int(input())
+if(x<9 and y<9 and c<9 and v<9):
+    if(x + 2 == c and y + 1 == v ):
+        pyautogui.alert("YES")
+    if(x + 2 == c and y - 1 == v ):
+        pyautogui.alert("YES")
+    if(x - 2  == c and y + 1 == v ):
+        pyautogui.alert("YES")
+    if(x - 2 == c and y - 1 == v ):
+        pyautogui.alert("YES")
+    elif(x + 1 == c and y + 2 == v):
+        pyautogui.alert("YES")
+    elif(x - 1 == c and y + 2 == v):
+        pyautogui.alert("YES")
+    elif(x + 1 == c and y - 2 == v):
+        pyautogui.alert("YES")
+    elif(x - 1 == c and y - 2 == v):
+        pyautogui.alert("YES")
+    else:
+        pyautogui.alert("NO")
+else:
+    pyautogui.alert("Ошибка")
+
+
+import pyautogui
+x = int(input())
+y = float(input())
+z = str(input())
+if((z == "+")  or (z == "-") or (z == "*")or (z == "/")or (z == "корень  из x") or(z == "корень  из y")or(z == "**")):
+    if(z == "+"):
+        pyautogui.alert(x + y)
+    if(z == "-"):
+        pyautogui.alert(x - y)
+    if(z == "*"):
+        pyautogui.alert(x * y)
+    if(z == "/"):
+        pyautogui.alert(x / y)
+    if(z == "корень  из x"):
+        pyautogui.alert(math.sqrt(x))
+    if(z == "корень из y"):
+        pyautogui.alert(math.sqrt(y))
+    if(z == "**"):
+        pyautogui.alert(x**y)
+else:
+    pyautogui.alert("Неизвестная команда")
+        
+
+import pyautogui
+print("(вещественное число/число с дробной частью")
+input()
+print("из какой пары в какую преобразовать значение?")
+if( print("Помощь")):
+    print("фунты-кг")
+    print("кг-фунты")
+    print("фаренгейт-цельсий")
+    print("цельсий-фаренгейт")
+    print("рубль-копейка")
+    print("копейка-рубль")
+    print("метр-сантиметр")
+    print("сантиметр-метр")
+else:
+    pyautogui.alert("Ошибка")
+
+
