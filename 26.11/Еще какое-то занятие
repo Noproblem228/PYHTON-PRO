@@ -1,0 +1,113 @@
+import pyautogui
+x = 123
+x1 = int(input())
+while(x!=x1):
+    pyautogui.alert("Попробуйте снова")
+    x1 = int(input())
+print("Молодец")
+
+
+import pyautogui
+x = "egor"
+y = 1111
+x1 = str(input())
+while(x!=x1):
+    pyautogui.alert("Попробуйте снова")
+    x1 = str(input())
+print("Введите пароль:")
+y1 = int(input())
+while(y!=y1):
+    pyautogui.alert("Попробуйте снова")
+    y1 = int(input())
+print("Вход произведен успешно!")
+    
+import pyautogui
+x = "eg"
+y = 1234
+x1 = str(input())
+y1 = int(input())
+while(x!=x1 and y!=y1):
+    if(x!=x1 and y==y1):
+        pyautogui.alert("Логин неверный")
+        x1 = str(input())
+    if(y!=y1 and x==x1):
+        pyautogui.alert("Пароль неверный")
+        y1 = int(input())
+    if(x!=x1 and y!=y1):
+        pyautogui.alert("Логин и пароль неверны")
+        x1 = str(input())
+        y1 = int(input())
+print("Логин и пароль верны")
+
+import pyautogui
+x = "eg"
+y = 1234
+x1 = str(input())
+y1 = int(input())
+while(x!=x1 and y!=y1):
+    if(x!=x1 and y==y1):
+        pyautogui.alert("Логин неверный")
+        x1 = str(input())
+    if(y!=y1 and x==x1):
+        pyautogui.alert("Пароль неверный")
+        y1 = int(input())
+    if(x!=x1 and y!=y1):
+        pyautogui.alert("Логин неверен")
+        x1 = str(input())
+        y1 = int(input())
+print("Логин и пароль верны")
+
+
+x = "стоп"
+y = "супергерой"
+c = "видео"
+v = "чтение"
+x1 = str(input())
+while(x1 == c or x1 == v or x1 == y or x!=x1):
+    if(x1 == y):
+        print("Человек паук")
+    if(x1 == v):
+        print("Не ной, Не ссы, Не тупи")
+    if(x1 == c):
+        print("Самый богаты человек в Вавилоне")
+    if(x1 == c or x1 == v or x1 == y or x!=x1):
+        print("Неизвестная команда")
+        x1 = str(input())
+    
+        
+z = 0
+a = 0
+x = "стоп"
+y = "сложение"
+c = "вычитание"
+v = "умножение"
+b = "деление"
+x1 = str(input())
+while(x1 == c or x1 == v or x1 == y or x!=x1 or x1 == b):
+    if(x1 == y):
+        print("Введите первое слагаемое")
+        z = int(input())
+        print("Введите второе слагаемое")
+        a = int(input())
+        print(z + a)
+    if(x1 == c):
+        print("Введите  уменьшаемое")
+        z = int(input())
+        print("Введите  вычитаемое")
+        a = int(input())
+        print(z - a)
+    if(x1 == v):
+        print("Введите первый множитель")
+        z = int(input())
+        print("Введите второй множитель")
+        a = int(input())
+        print(z * a)
+    if(x1 == b):
+        print("Введите  делимое")
+        z = int(input())
+        print("Введите делитель")
+        a = int(input())
+        print(z / a)
+    if not(x1 == c or x1 == v or x1 == y or x!=x1 or x1 == b):
+        print("неизвестная команда")
+        x1 = str(input())
