@@ -1,0 +1,7 @@
+z = "str"
+x = str(input())
+while(x != 'конец'):
+    if (x != "конец"):
+        z = z + x +'\n'
+        x = str(input())
+print(z)
