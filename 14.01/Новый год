@@ -1,0 +1,69 @@
+import time
+x = ['морковь','огурец','баклажан']
+print("добавь к списку еще овощей")
+time.sleep(3)
+x.append('помидор')
+x.append('лук')
+print(x)
+
+
+import time
+x = ['покушать','поспать','попить']
+y = str(input())
+d = 0
+while(d == 0 ):
+    if(y == 'добавить'):
+        g = str(input())
+        x.append(g)
+        y = str(input())
+    if(y == 'удалить по индексу'):
+        g = int(input())
+        del x[g]
+        y = str(input())
+    if(y == 'удалить по названию'):
+        g = str(input())
+        x.remove(g)
+        y = str(input())
+    if(y == 'показать элемент по номеру'):
+        g = str(input())
+        print( x [g])
+        y = str(input())
+    if(y == 'редактировать'):
+        g = int(input())
+        x[g]=input()
+        y = str(input())
+    if(y == 'показать весь список'):
+        print(x)
+        y = str(input())
+    if(y == 'стоп'):
+        print('все')
+
+d = 0
+x = []
+b = str(input())
+while b!='0':
+    x.append(b)
+    b = str(input())
+while(d == 0):
+    y = str(input())
+    if(y in x):
+        print('выбросить','обменять','поднять')
+        g = str(input())
+    if(g == 'выбросить'):
+        f = str(input())
+        x.remove(f)
+        g = str(input())
+    if(g == 'обменять'):
+        f = str(input())
+        x[f] = input()
+        g = str(input())
+    if(g == 'поднять'):
+        f = str(input())
+        x.append(f)
+        g = str(input())
+    if(g == 'показать весь список'):
+        print(x)
+        g = str(input())
+    if(g == 'ничего'):
+        print('закрыть инвентарь')
+
