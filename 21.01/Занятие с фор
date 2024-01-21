@@ -1,0 +1,38 @@
+x = int(input())
+g = 0
+s = 0
+for c in range(x):
+    d = int(input())
+    g += d
+print(g)
+
+x = int(input())
+s = 0
+for c in range(x):
+    s+= c
+print(s)
+
+x = int(input())
+e = 0
+d = 1
+for c in range(x):
+    e = e + 1
+    d = int( d * e)
+print(d)
+
+import pyautogui
+import time
+n = int(input())
+b = 0
+for c in range(n):
+    time.sleep(2)
+    if(b == 0 ):
+        b = (b + 1)
+        pyautogui.moveTo(100,900)
+        pyautogui.click()
+    time.sleep(2)
+    pyautogui.hotkey('ctrl','t')
+
+for c in range(10,100):
+    if ( c % 7 != 0):
+        print(c)
