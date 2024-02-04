@@ -1,0 +1,100 @@
+N = int(input())
+x = []
+S = 0
+w = 1
+for i in range(N):
+    x.append(int(input()))
+for i in range(N):
+    if(x[i] % 2 == 0):
+        S += x[i]
+        w *= x[i]
+print(S)
+print(w)
+
+N = int(input())
+x = []
+S = 0
+w = 1
+for i in range(N):
+    x.append(int(input()))
+for i in range(N):
+    if(x[i] < 0 ):
+        S += x[i]
+        w *= x[i]
+print(S)
+print(w)
+
+N = int(input())
+x = []
+S = 0
+for i in range(N):
+    x.append(int(input()))
+for i in range(N):
+     if(i % 2 == 0):
+        S += x[i]
+print(S)
+
+
+N = int(input())
+x = []
+w = 1
+for i in range(N):
+    x.append(int(input()))
+for i in range(N):
+    if(x[i] != 0 ):
+        w *= x[i]
+print(w)
+
+
+N = int(input())
+x = []
+w = 1
+for i in range(N):
+    x.append(int(input()))
+for i in range(N):
+    if(x[i] % 3 == 0):
+        d = w + 1 
+print(d)
+
+
+N = int(input())
+x = []
+w = 0
+for i in range(N):
+    x.append(int(input()))
+for i in range(N):
+    if(x[i] % 3 != 0):
+        w = w + 1 
+print(w)
+
+N = int(input())
+x = []
+w = 0
+for i in range(N):
+    x.append(int(input()))
+for i in range(N):
+    if(i < x[i]):
+        w = w + 1 
+print(w)
+
+N = int(input())
+x = []
+w = 0
+for i in range(N):
+    x.append(int(input()))
+for i in range(N):
+    if(i != 0):
+        if(x[i]% i == 0):
+            w+= x[i]
+print(w)
+
+N = int(input())
+x = []
+d = 1
+for i in range(N):
+    x.append(int(input()))
+for i in range(N):
+    if(x[i] % 3 == 0):
+        d*= x[i]
+print(d)
+
