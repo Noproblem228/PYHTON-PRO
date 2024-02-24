@@ -1,0 +1,23 @@
+x = [[0,1,2,3,4,5],[1,2,3,4,5,6],[2,3,4,5,6,7],[3,4,5,6,7,8],[4,5,6,7,8,9],[5,6,7,8,9,10]]
+b = 0
+for i in range(len(x)):
+    for j in range(len(x)):
+        print(x[j][i],end = ' ')
+        b = b + 1
+        if(b >= len(x)):
+            b = 0
+            print('\n')
+# for i in range():
+#     print(len(x[1]))
+
+x = [[r],[],[],[],[],[]]
+b = 0
+for i in range(len(x)):
+    for j in range(len(x)):
+        print(x[j][i],end = ' ')
+        b = b + 1
+        if(b >= len(x)):
+            b = 0
+            print('\n')
+# for i in range():
+#     print(len(x[1]))
