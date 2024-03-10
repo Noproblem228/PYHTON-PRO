@@ -1,0 +1,27 @@
+# def draw_box():
+#     for i in range(10):
+#         print('*',end = "")
+#     print('')
+#     for i in range(12):
+#         print('*', end= "")
+#         for  i in range(8):
+#             print(' ',end = "")
+#         print('*')
+#     for i in range(10):
+#         print('*',end = '')
+# 
+# draw_box()
+# def draw_box():
+#     x = 1
+#     for i in range(10):
+#         print('*'*x)
+#         x = x + 1
+# draw_box()
+#
+z = 0
+def draw_triangle(fill,base):
+    z = '*'
+    for i in range(base):
+        for i in range(fill):
+            print(i)
+draw_triangle(z,9)
