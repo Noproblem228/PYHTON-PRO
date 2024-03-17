@@ -1,0 +1,23 @@
+import pyautogui
+import time
+print("Здравствуйте,это оператор программы по получению плана тренировок по легкой атлетике.")
+c = str(input())
+time.sleep(1)
+print("Для регистрации заполним несколько пунктов для документов")
+time.sleep(2)
+z = str(input("Пол ребенка: "))
+time.sleep(1)
+v = int(input("Возраст ребенка: "))
+time.sleep(1)
+a = str(input("ФИО ребенка: "))
+time.sleep(1)
+q = str(input("ФИО законного представителя: "))
+time.sleep(3)
+if( v < 13):
+    print("Ваш ребенок в группе до 13 лет")
+if ( v > 13 and v < 18):
+    print("Ваш ребенок в группе от 13 до 17 лет")
+if(v > 17):
+    print("Ваш ребенок попал в старшую группу(от 17 и старше)")
+time.sleep(2)
+print("Ссылка для плана: http://project8926999.tilda.ws/proect")
