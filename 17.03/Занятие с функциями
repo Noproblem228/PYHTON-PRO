@@ -1,0 +1,31 @@
+def f (n):
+    print("Привет",n)
+f('Егор')
+f('Полина')
+f('Маша')
+f(input())
+
+
+def print_fio (n,q,e):
+    print(n[0],q[0],e[0], sep ="")
+d = str(input())
+a = str (input())
+s = str(input())
+print_fio(d,a,s)
+
+def print_digit_sum ():
+    print()
+d = int(input())
+c = d % 10 #последнее число
+z = 0
+while(d > 10):
+    z = z + 1
+    d = d % 10
+
+    
+d = int(input())
+z = 0
+while(d > 10):
+    z = z + 1
+    d = d // 10
+print(z)
