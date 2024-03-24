@@ -1,0 +1,23 @@
+# def f(a,n,x):
+#     a = []
+#     n = int(input())
+#     x = str(input())
+#     a.append(n)
+#     for i in x:
+#         a.append(i)
+#     return a
+# print(f([],9,'abs'))
+# 
+# 
+# def number_of_factors(x):
+#     n = 1 # Делим
+#     z = 0 #Вывод количества делитетелей
+#     for i in range(1,x + 1):
+#         if(x % i == 0):
+#             z = z + 1
+#     print(z)
+# x = int(input())
+# number_of_factors(x)
+# 
+# #def find_all(x,y):
+#     
