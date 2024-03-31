@@ -1,0 +1,33 @@
+# def password():
+#     g1 = 0
+#     g2 = 0
+#     g3 = 0
+#     g4 = 0
+#     x = str(input())
+#     if(len(x) >= 8 ):
+#         g1 = 1
+#     for i in "ASDFGHJKLZXCVBNMQWERTYUIOP":
+#         if( i in x):
+#             g2 = 1
+#     for i in "qwertyuioplkjhgfdsamnbvcxz":
+#         if( i in x):
+#             g3 = 1
+#     for i in "1234567890":
+#         if( i in x):
+#             g4 = 1 
+#     if(g1 == 1 and g2 == 1 and g3 == 1 and g4 == 1):
+#         print("True")
+#     else:
+#         print("False")
+# password()
+# def palindrom():
+#     g1 = 0
+#     x = str(input())
+#     for i in range(-1,-4,-1):
+#         if( i == x):
+#             g1 = 1
+#     if(g1 == 1):
+#         print("True")
+#     else:
+#         print("False")
+# palindrom()
