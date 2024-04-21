@@ -1,0 +1,33 @@
+import pyautogui
+import time
+print("Мой проект представляет собой набор возможностей компьютера")
+time.sleep(2)
+print("Мои возможности:")ф
+time.sleep(2)
+print("Перевод слов с английского на русский язык")
+print("Поиск значения слова в интернете ")
+print("Использование калькулятора")
+time.sleep(2)
+slovo = str(input("Выбрите задачу для выполнения: "))
+# if( slovo == "Перевод"):
+#
+# if( slovo == "Значение"):
+#
+# if( slovo == "Калькулятор"):
+#
+# if( slovo == "Стоп"):
+#     
+    
+import pyautogui
+import time
+def znachenie():
+    f = str(input("Слово: "))
+    pyautogui.moveTo(100,800)
+    pyautogui.click()
+    time.sleep(3)
+    pyautogui.moveTo(160,60)
+    pyautogui.click()
+    pyautogui.write("значение слова")
+    pyautogui.write(f)
+    pyautogui.press('enter')
+znachenie()
