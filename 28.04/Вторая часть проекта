@@ -1,0 +1,69 @@
+import pyautogui
+import time
+def znachenie():
+    f = str(input("Слово: "))
+    pyautogui.hotkey('shift','alt')
+    time.sleep(2)
+    pyautogui.hotkey('win','r')
+    pyautogui.write("cmd")
+    pyautogui.hotkey('enter')
+    time.sleep(1)
+    pyautogui.write("start chrome")
+    pyautogui.hotkey('f11')
+    pyautogui.hotkey('enter')
+    time.sleep(6)
+    pyautogui.hotkey('ctrl','k')
+    time.sleep(2)
+    pyautogui.write(f)
+    time.sleep(1)
+    pyautogui.hotkey('enter')
+
+
+print("Мой проект представляет собой набор возможностей компьютера")
+time.sleep(2)
+print("Мои возможности:")
+time.sleep(2)
+print("Перевод слов с английского на русский язык")
+time.sleep(2)
+print("Поиск значения слова в интернете ")
+time.sleep(2)
+print("Использование калькулятора")
+time.sleep(2)
+slovo = str(input("Выбрите задачу для выполнения: "))
+
+
+if( slovo == "Значение"):
+    znachenie()
+    
+    
+if( slovo == "Калькулятор1"):
+    v = eval(input())
+    print(v)
+    
+    
+if(slovo == "Калькулятор2"):
+    chiclo1 = int(input())
+    chiclo2 = int(input())
+    delat = str(input())
+    if(delat == "Умножить"):
+        otvet = chiclo1*chiclo2
+        print(otvet)
+    if(delat == "Разделить нацело"):
+        otvet = chiclo1//chiclo2
+        print(otvet)
+    if(delat == "Разделить с остатком"):
+        otvet == chiclo1%chiclo2
+        print(otvet)
+    if(delat == "Сложить"):
+        otvet = chiclo1+chiclo2
+        print(otvet)
+    if(delat == "Вычесть"):
+        otvet = chiclo1-chiclo2
+        print(otvet)
+        
+        
+if( slovo == "Стоп"):
+    print("Завершение программы ")
+   
+   
+
