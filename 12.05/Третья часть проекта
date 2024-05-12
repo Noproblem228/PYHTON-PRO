@@ -1,0 +1,129 @@
+import pyautogui
+import time
+#Поиск значения слова в интернете
+def znachenie():
+    f = str(input("Слово: "))
+    pyautogui.hotkey('shift','alt')
+    time.sleep(2)
+    pyautogui.hotkey('win','r')
+    pyautogui.write("cmd")
+    pyautogui.hotkey('enter')
+    time.sleep(1)
+    pyautogui.write("start chrome")
+    pyautogui.hotkey('f11')
+    pyautogui.hotkey('enter')
+    time.sleep(6)
+    pyautogui.hotkey('ctrl','k')
+    time.sleep(2)
+    pyautogui.write(f)
+    time.sleep(1)
+    pyautogui.hotkey('enter')
+
+#Диалог
+print("Мой проект представляет собой набор возможностей компьютера")
+time.sleep(2)
+print("Мои возможности:")
+time.sleep(2)
+print("Перевод слов с английского на русский язык")
+time.sleep(2)
+print("Поиск значения слова в интернете ")
+time.sleep(2)
+print("Использование калькулятора")
+time.sleep(2)
+print("Игра")
+time.sleep(2)
+slovo = str(input("Выбрите задачу для выполнения: "))
+
+#Поиск значния слова в интернете(реализация)
+if( slovo == "Значение"):
+    znachenie()
+
+#Работа калькулятора в одну функцию
+if( slovo == "Калькулятор1"):
+    v = eval(input())
+    print(v)
+
+#Работа калькулятора в виде кода
+if(slovo == "Калькулятор2"):
+    chiclo1 = int(input())
+    chiclo2 = int(input())
+    delat = str(input())
+    if(delat == "Умножить"):
+        otvet = chiclo1*chiclo2
+        print(otvet)
+    if(delat == "Разделить нацело"):
+        otvet = chiclo1//chiclo2
+        print(otvet)
+    if(delat == "Разделить с остатком"):
+        otvet == chiclo1%chiclo2
+        print(otvet)
+    if(delat == "Сложить"):
+        otvet = chiclo1+chiclo2
+        print(otvet)
+    if(delat == "Вычесть"):
+        otvet = chiclo1-chiclo2
+        print(otvet)
+        
+#ИГРЫ   
+if( slovo == "Игра"):
+    print("В моей системе есть несколько игр:")
+    print("Камень Ножницы Бумага ")
+    print("Ввод логина,пароля и их проверка")
+    if()
+
+#Завершение программы 
+if( slovo == "Стоп"):
+    print("Завершение программы ")
+    
+    x = {"камень": "ножницы","ножницы": "бумага","бумага": "камень"}
+while True:
+    b = input("Игрок 1: ")
+    c = input("Игрок 2: ")
+    
+    
+    if b == c:
+        print("ничья")
+        continue
+    
+    
+    for K, L in x.items():
+        if b == K and c == L:
+            print("Победил Игрок 1")
+            break
+        elif c == K and b == L:
+            print("Победил Игрок 2")
+            break
+        
+        print("Ввод логина: ")
+c  = str(input())
+print("Вввод пароля: ")
+s = str(input())
+x = str(input("Введите логин: "))
+y = str(input("Введите пароль: "))
+if(x == ("a")and y == ("v")):
+    pyautogui.moveTo(1250,20)
+    pyautogui.click()
+    pyautogui.moveTo(1300,20)
+    time.sleep(1)
+    pyautogui.doubleClick()
+if(x !=(c) and y !=(s)) :
+    pyautogui.alert(text ="Логин и Пароль неверны",button ="ОК")
+if(x !=(c) and y ==(s)):
+    pyautogui.alert(text ="Логин неверен",button ='ОК')
+if(x ==(c) and y !=(s)):
+    pyautogui.alert(text = "Пароль неверен",button = 'ОК')
+else:
+    pyautogui.alert(text = "Все верно",button ="ОК")
+    
+    c = 'АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ'
+z = input('Шаг шифровки: ')
+message = input("Сообщение для шифровки: ")
+itog = ''
+for i in message:
+    v = c.find(i)
+    a = v + z
+    if i in c:
+        itog += c[a]
+    else:
+        itog += i
+print (itog)
