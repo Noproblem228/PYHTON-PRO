@@ -34,11 +34,13 @@ slovo = str(input("Выбрите задачу для выполнения: "))
 #Поиск значния слова в интернете(реализация)
 if( slovo == "Значение"):
     znachenie()
+slovo = str(input())
 
 #Работа калькулятора в одну функцию
 if( slovo == "Калькулятор1"):
     v = eval(input())
     print(v)
+slovo = str(input())
 
 #Работа калькулятора в виде кода
 if(slovo == "Калькулятор2"):
@@ -60,6 +62,7 @@ if(slovo == "Калькулятор2"):
     if(delat == "Вычесть"):
         otvet = chiclo1-chiclo2
         print(otvet)
+slovo = str(input())
 
 #ИГРЫ   
 if( slovo == "Игра"):
@@ -85,6 +88,7 @@ if( slovo == "Игра"):
                 if b == K and c == L:
                     print("Победил Игрок 1")
                     break
+slovo = str(input())
 #Игра в логин и пароль            
     if(bn == "логин и пароль"):
         print("Ввод логина: ")
@@ -112,6 +116,7 @@ if( slovo == "Игра"):
                 pyautogui.alert(text = "Все верно",button ="ОК")
         else:
             pyautogui.alert(text = "Все верно",button ="ОК")
+slovo = str(input())
 
 #Завершение программы 
 if( slovo == "Стоп"):
